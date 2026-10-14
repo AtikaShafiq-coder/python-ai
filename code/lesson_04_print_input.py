@@ -1,21 +1,23 @@
 
-"""Collect business details and build a prompt for an AI assistant."""
+"""TASK:04 Collect business details and build a prompt for an AI assistant."""
 
-# Personalizing the greeting makes the tool feel relevant to each user.
+# Ask for the user's name to make the greeting more personal.
 name = input("Your name: ").strip()
 
-# Knowing the business type helps the AI suggest solutions for that industry.
+# Get the type of business the user wants help with.
 business = input("Business type: ").strip()
 
-# A clear problem helps the AI produce more useful and specific suggestions.
+# Ask about the main problem the business is facing.
 problem = input("Biggest problem: ").strip()
 
 print(f"\nWelcome, {name}!")
 
+# Create a prompt based on the business details provided by the user.
 prompt = (
     f"Suggest 3 AI solutions for a {business} "
     f"that struggles with {problem}."
 )
 
+# Display the final prompt for the user.
 print("--- Your AI Prompt ---")
 print(prompt)
