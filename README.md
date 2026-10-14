@@ -28,3 +28,4 @@ uv run code/lesson_01_intro.py
 - Lesson 1.1: Your AI Career Intro
 - Lesson 1.2: Toolkit Proof
 - Lesson 1.3: Client-Ready Repo
+- Lesson 1.4: Business Prompt Builder
