@@ -29,3 +29,23 @@ uv run code/lesson_01_intro.py
 - Lesson 1.2: Toolkit Proof
 - Lesson 1.3: Client-Ready Repo
 - Lesson 1.4: Business Prompt Builder
+
+
+## Module 1 Project: AI Prompt Kit
+
+A Python tool that turns a local business's details into
+3 ready-to-use AI prompts for marketing, customer service,
+and business growth.
+
+**Run:**
+
+```bash
+uv run code/project_m1_prompt_kit.py
+```
+
+![Prompt Kit running](docs/project-m1-run.png)
+
+**Who would pay for this:** Local small business owners who
+want to use AI for their daily business tasks but do not
+know how to write effective prompts.
+
