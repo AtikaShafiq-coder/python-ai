@@ -29,6 +29,8 @@ uv run code/lesson_01_intro.py
 - Lesson 1.2: Toolkit Proof
 - Lesson 1.3: Client-Ready Repo
 - Lesson 1.4: Business Prompt Builder
+- Lesson 1.5: Variables and Data Types
+- Lesson 1.6: Working with Text (Strings)
 
 
 ## Module 1 Project: AI Prompt Kit
@@ -49,3 +51,11 @@ uv run code/project_m1_prompt_kit.py
 want to use AI for their daily business tasks but do not
 know how to write effective prompts.
 
+
+### Lesson 1.5: Variables and Data Types
+
+![Lesson 1.5 Output](docs/lesson-05-output.png)
+
+### Lesson 1.6: Working with Text (Strings)
+
+![Lesson 1.6 Output](docs/lesson-06-output.png)
