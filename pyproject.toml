@@ -1,7 +1,7 @@
 [project]
 name = "python-ai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python for AI"
 readme = "README.md"
 authors = [
     { name = "Atika", email = "datascientist.girl.cs@gmail.com" }
@@ -11,6 +11,5 @@ dependencies = [
     "ipykernel>=7.4.0",
 ]
 
-[project.scripts]
-python-ai = "python_ai:main"
+
 
