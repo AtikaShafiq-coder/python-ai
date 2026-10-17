@@ -31,6 +31,7 @@ uv run code/lesson_01_intro.py
 - Lesson 1.4: Business Prompt Builder
 - Lesson 1.5: Variables and Data Types
 - Lesson 1.6: Working with Text (Strings)
+- Lesson 1.7: Operators and Making Decisions
 
 
 ## Module 1 Project: AI Prompt Kit
@@ -59,3 +60,7 @@ know how to write effective prompts.
 ### Lesson 1.6: Working with Text (Strings)
 
 ![Lesson 1.6 Output](docs/lesson-06-output.png)
+
+### Lesson 1.7: Operators and Making Decisions
+
+![Lesson 1.7 Output](docs/lesson-07-output.png)
