@@ -32,6 +32,7 @@ uv run code/lesson_01_intro.py
 - Lesson 1.5: Variables and Data Types
 - Lesson 1.6: Working with Text (Strings)
 - Lesson 1.7: Operators and Making Decisions
+- Lesson 1.8: Mini Project — Rule-Based Chatbot
 
 
 ## Module 1 Project: AI Prompt Kit
@@ -64,3 +65,23 @@ know how to write effective prompts.
 ### Lesson 1.7: Operators and Making Decisions
 
 ![Lesson 1.7 Output](docs/lesson-07-output.png)
+
+
+## Lesson 1.8: Business Helper Bot
+
+**Business:** Atika Beauty Salon
+
+| Intent | Keywords | Reply |
+|---|---|---|
+| Complaint | complaint, refund, late | Connect to a human |
+| Opening hours | hours, open, time | Open 10 AM to 8 PM |
+| Prices | price, cost, charges | Ask about a service |
+| Location | location, address, where | Main Boulevard, Lahore |
+| Booking | booking, appointment | Contact us to book |
+| Greeting | hi, hello, salam | Friendly greeting |
+| Exit | bye, exit | Goodbye and summary |
+| Other | No matching keyword | Show an AI prompt |
+
+### Lesson 1.8: Chatbot Output
+
+![Lesson 1.8 Output](docs/lesson-08-output.png)
