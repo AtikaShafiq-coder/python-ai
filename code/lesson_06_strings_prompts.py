@@ -19,17 +19,16 @@ short_question = question[:150]
 # Check for Python regardless of capitalization.
 mentions_python = "python" in question.lower()
 
-# Stretch: replace an unwanted word before building the prompt.
+# Stretch: Replace an unwanted word before building the prompt.
 clean_question = short_question.replace("stupid", "***")
 
 # Example price for practice only, not a real API price.
 price_per_1k_tokens = 0.5
 estimated_cost = estimated_tokens / 1000 * price_per_1k_tokens
 
-# Build a multi-line prompt using an f-string.
-prompt = f"""You are a helpful Python tutor.
-Hello, {name}!
-Answer the user's question clearly and simply.
+# Why: An f-string inserts the user's name and question into the prompt.
+prompt = f"""You are a friendly Python tutor.
+Greet {name} by name and answer in 3 short lines.
 Question: {clean_question}"""
 
 print("=" * 40)
