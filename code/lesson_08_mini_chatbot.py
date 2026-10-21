@@ -23,21 +23,22 @@ while True:
     message = input(f"{name}: ").strip().lower()
     count += 1
 
-    if message == "bye" or message == "exit":
+    # Why: Human requests must be handled before normal questions.
+    if "agent" in message or "human" in message:
+        print(f"{BOT}: Connecting you to a human...")
+        break
+
+    # Why: Complaints get priority over ordinary salon questions.
+    elif "complaint" in message or "refund" in message or "late" in message:
+        complaints += 1
+        print(f"{BOT}: Sorry about that. Connecting you to a human...")
+
+    elif message == "bye" or message == "exit":
         print(f"{BOT}: Goodbye, {name}! Thank you for visiting.")
         break
 
     elif message == "":
         print(f"{BOT}: Please type a question.")
-
-    # Why: Handle complaints before booking so unhappy customers get help first.
-    elif "complaint" in message or "refund" in message or "late" in message:
-        complaints += 1
-        print(f"{BOT}: Sorry about that. Connecting you to a human...")
-
-    elif "agent" in message or "human" in message:
-        print(f"{BOT}: Connecting you to a human...")
-        break
 
     elif "hour" in message or "open" in message or "time" in message:
         print(f"{BOT}: Our example opening hours are 10 AM to 8 PM.")
@@ -51,16 +52,19 @@ while True:
     elif "booking" in message or "appointment" in message:
         print(f"{BOT}: Please contact our salon to book an appointment.")
 
-    # Why: Exact greeting matches avoid triggering on words like "which".
+    # Why: Exact greeting matches avoid triggering on unrelated words.
     elif message == "hi" or message == "hello" or message.startswith("salam"):
         print(f"{BOT}: Hello, {name}! How can I help you?")
 
     else:
+        # Why: Unanswered questions show the business where help is needed.
         unanswered += 1
+
         prompt = (
             "You are a helpful beauty salon assistant. "
-            f"Answer this customer question politely: {message}"
+            f"Answer this customer question politely: {message[:150]}"
         )
+
         print(f"{BOT}: I don't know that answer yet.")
         print(f"AI prompt for Module 2: {prompt}")
 
@@ -69,3 +73,4 @@ print(f"Chat summary: {count} messages")
 print(f"Unanswered questions: {unanswered}")
 print(f"Complaints received: {complaints}")
 print("=" * 40)
+
