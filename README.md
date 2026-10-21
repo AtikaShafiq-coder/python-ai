@@ -238,3 +238,47 @@ For the chatbot, test greetings, opening hours, prices, location, appointments, 
 - The chatbot uses predefined rules; it does not call a real AI API.
 - The AI prompt displayed by the chatbot is prepared for future development in Module 2.
 - Each task should have its own clear Git commit message.
+
+---
+
+## Project M1 — Part 2: AI Front Desk
+
+### Overview
+
+This part extends the previous Python tasks into a front-desk system for Atika Beauty Salon. It handles customer requests, service quotes, complaints, and human-support requests using predefined business rules.
+
+### Features
+
+- Greets customers by name.
+- Processes customer messages.
+- Calculates service quotes.
+- Applies a 10% discount for quantities of 10 or more.
+- Handles complaints and refund requests.
+- Supports requests for a human representative.
+- Validates service quantities.
+
+### Run the Program
+
+Run the following command from the repository root:
+
+```bash
+uv run code/project_m1_front_desk.py
+```
+
+### Part 2 Files
+
+- `code/project_m1_front_desk.py` — Front-desk Python program.
+- `docs/project-m1-part2-design.md` — Intent table, business rules, and test table.
+- `docs/project-m1-part2-results.md` — Results of two actual Ollama tests.
+- `docs/project-m1-part2-run.png` — Screenshot of the running program.
+
+### Example Service Prices
+
+| Service | Example Price |
+|---|---:|
+| Facial | Rs. 2,500 |
+| Haircut | Rs. 1,200 |
+| Manicure | Rs. 800 |
+
+*These prices are examples for the assignment.*
+
